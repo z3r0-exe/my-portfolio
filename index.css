@@ -88,53 +88,24 @@
     text-align: center;
   }
   @media screen and (max-width: 768px) {
-    body {
-      font-size: 14px; /* Decrease font size for smaller screens */
-    }
     .head-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1rem; 
-      }
-      .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.8); 
-        z-index: 100; 
-        backdrop-filter: blur(5px);
-        padding: .5rem 0;
-      }
-      .nav-links {
-        overflow-x: auto; /* Allow horizontal scrolling for small screens */
-        white-space: nowrap; /* Prevent links from wrapping */
-        margin-right: 0; /* Remove right margin */
-        margin-top: 10px; /* Add top margin for spacing */
-      }
-    
-      nav ul li {
-        margin-right: 10px; /* Add right margin to each list item */
-      }
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
     .logo-container {
-      margin-left: 5px; /* Further adjust margin for smaller screens */
+      margin-left: 0; /* Reset margin for smaller screens */
     }
   
     .nav-links {
-      margin-right: 5px; /* Further adjust margin for smaller screens */
+      margin-right: 0; /* Reset margin for smaller screens */
+      margin-top: 10px; /* Add top margin for spacing */
+      overflow-x: auto; /* Allow horizontal scrolling if needed */
+      white-space: nowrap; /* Prevent links from wrapping */
     }
   
     nav ul li {
-      margin-right: 5px; /* Further adjust margin for smaller screens */
+      margin-right: 10px; /* Add right margin to each list item */
     }
   
-    main {
-      padding-top: 80px; /* Adjust padding for fixed header */
-    }
-  
-    section {
-      margin: 1rem auto; /* Adjust margin for smaller screens */
-      max-width: 95%; /* Further adjust width for smaller screens */
-    }
+    /* Adjust other styles as needed */
   }
