@@ -47,7 +47,10 @@
     list-style-type: none;
     display: flex;
   }
-  
+  .nav-links a.active:hover {
+    color: inherit; /* Reset color to default */
+    /* Add any other necessary reset styles */
+  }
   nav ul li {
     margin-right: 20px;
   }
@@ -85,19 +88,53 @@
     text-align: center;
   }
   @media screen and (max-width: 768px) {
-    /* CSS styles for smaller screens */
     body {
-      font-size: 14px; /* Example adjustment for smaller font size */
+      font-size: 14px; /* Decrease font size for smaller screens */
+    }
+    .head-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem; 
+      }
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.8); 
+        z-index: 100; 
+        backdrop-filter: blur(5px);
+        padding: .5rem 0;
+      }
+      .nav-links {
+        overflow-x: auto; /* Allow horizontal scrolling for small screens */
+        white-space: nowrap; /* Prevent links from wrapping */
+        margin-right: 0; /* Remove right margin */
+        margin-top: 10px; /* Add top margin for spacing */
+      }
+    
+      nav ul li {
+        margin-right: 10px; /* Add right margin to each list item */
+      }
+    .logo-container {
+      margin-left: 5px; /* Further adjust margin for smaller screens */
     }
   
-    /* Example adjustments for navigation or layout */
     .nav-links {
-      margin-right: 0; /* Remove right margin */
-      margin-top: 1rem; /* Add top margin */
+      margin-right: 5px; /* Further adjust margin for smaller screens */
     }
   
-    /* Adjustments specific to certain elements */
-    .header {
-      padding: 10px; /* Example padding adjustment */
+    nav ul li {
+      margin-right: 5px; /* Further adjust margin for smaller screens */
+    }
+  
+    main {
+      padding-top: 80px; /* Adjust padding for fixed header */
+    }
+  
+    section {
+      margin: 1rem auto; /* Adjust margin for smaller screens */
+      max-width: 95%; /* Further adjust width for smaller screens */
     }
   }
